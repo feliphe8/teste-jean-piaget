@@ -1,0 +1,18 @@
+{
+    "name": "feliphe8/teste-jean-piaget",
+    "authors": [
+        {
+            "name": "Feliphe Simões",
+            "email": "feliphe.carvalho@fatec.sp.gov.br"
+        }
+    ],
+    "require": {
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "vendor\\back-end\\php-classes\\src"
+        }
+    }
+}

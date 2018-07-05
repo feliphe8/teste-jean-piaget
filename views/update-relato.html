@@ -1,0 +1,28 @@
+<div class="container container-form">
+    <div class="row center-align">
+
+        <h2>Atualizar relato</h2>
+
+        <form class="col s12" action="/atualizar-relato/{$post.idpost}" method="POST">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <input id="update-relato-titulo" type="text" class="validate" name="destitle" value="{$post.destitle}" required>
+                    <label for="icon_telephone">Título do relato</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">import_contacts</i>
+                    <textarea id="update-relato-body" class="materialize-textarea validate" name="desbody" required>{$post.desbody}</textarea>
+                    <label for="icon_mode_edit">Relato</label>
+                </div>
+
+
+
+                <div class="input-field col s12">
+                        <input id="submit" type="submit" class="btn green" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

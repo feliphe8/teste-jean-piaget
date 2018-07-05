@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #424242; }
+
+.container-form {
+  width: 45%;
+  padding: 20px;
+  padding-top: 1px; }
+
+.dashboard {
+  width: 50%;
+  padding: 20px;
+  padding-top: 1px; }
+
+.secondary-content {
+  color: red; }
+
+@media only screen and (max-width: 1550px) {
+  .container-form {
+    width: 60%; } }
+@media only screen and (max-width: 1130px) {
+  .container-form {
+    width: 80%; }
+
+  .dashboard {
+    width: 80%; } }
+@media only screen and (max-width: 850px) {
+  .container-form {
+    width: 100%; } }
+@media only screen and (max-width: 675px) {
+  .container-form {
+    width: 100%; }
+
+  .dashboard {
+    width: 100%; }
+
+  .row .col {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=main.css.map */

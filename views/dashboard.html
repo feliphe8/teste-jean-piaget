@@ -1,0 +1,33 @@
+<div class="container dashboard blue-grey lighten-5">
+    <div class="row">
+
+        <h2>Dashboard</h2>
+
+        <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle">person</i>
+              <span class="title">{$user.desname}</span>
+                <p><b>Biografia: </b>{$user.desbiograph}</p>
+                <p><b>Data de Nascimento: </b>{function="DateTime::createFromFormat('Y-m-d', $user.desbirth)->format('d/m/Y')"}</p>   
+                <p><b>Tel: </b>{$user.nrphone}</p>
+                <p><b>Endereço: </b>{$address.desaddress}, nº{$address.desnumber}, {$address.descomplement} - CEP: {$address.deszipcode} - {$address.descity}, {$address.desstate} - {$address.descountry}</p>
+                 <p class="right-align"><a href="/criar-relato" class="btn-small green">Criar Relato</a></p>
+              <a href="/logout" class="secondary-content"><i class="material-icons">power_settings_new</i></a>
+            </li>
+          </ul>
+
+        {loop="$posts"}
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p class="card-title">{$value.destitle}</p>
+                  <p>{$value.desbody}</p>
+                </div>
+                <div class="card-action">
+                  <a href="/atualizar-relato/{$value.idpost}">Atualizar relato</a>
+                  <a href="/deletar-relato/{$value.idpost}">Deletar relato</a>
+            </div>
+        </div>
+        {/loop}
+
+    </div>
+</div>
